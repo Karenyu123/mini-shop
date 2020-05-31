@@ -1,0 +1,8 @@
+<view class="search">
+  <input type="text" value="{{value}}" placeholder="请输入您要搜索的商品" bindinput="handleSearch" />
+  <text class="iconfont  icon-sousuo"></text>
+  <text wx:if="{{isFocus}}" class="iconfont  icon-ziyuanxhdpi" bindtap="cleaer"></text>
+</view>
+<view  wx:if="{{isFocus}}" class="search-result">
+  啊噢~暂无相关信息
+</view>

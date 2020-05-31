@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "DetailFooter": "../../components/detailFooter/detailFooter"
+  },
+  "navigationBarTitleText": "商品详情"
+}

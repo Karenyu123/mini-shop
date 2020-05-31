@@ -1,0 +1,15 @@
+/* components/tabs/tabs.wxss */
+.tabs .tabs-nav {
+  display: flex;
+}
+.tabs .tabs-nav .nav-item {
+  flex: 1;
+  text-align: center;
+  padding: 20rpx;
+}
+.tabs .tabs-nav .nav-item.active text {
+  display: inline-block;
+  padding-bottom: 20rpx;
+  width: 60rpx;
+  border-bottom: 2px solid var(--themeColor);
+}

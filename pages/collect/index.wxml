@@ -1,0 +1,19 @@
+<view class="cart-list">
+  <!-- <view class="title">购物车</view> -->
+  <view class="cart-list-item" wx:for="{{collects}}" wx:key="index">
+    <navigator class="goods-img" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+      <image mode="widthFix" src="{{item.pics[0]['pics_mid']}}" />
+    </navigator>
+    <view class="goods-info">
+      <view class="goods-name">{{item.goods_name}}</view>
+      <view class="price-wrapper">
+        <view class="price">￥{{item.goods_price}}</view>
+        <view class="action">
+          <!-- <text class="minus" bindtap="handleDecrement" data-goods="{{item}}">-</text> -->
+          <text class="count">{{item.num}}</text>
+          <!-- <text class="add" bindtap="handleCartAdd" data-goods="{{item}}">+</text> -->
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

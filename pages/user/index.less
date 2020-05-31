@@ -1,0 +1,101 @@
+/* pages/user/index.wxss */
+@import "../../style/font.wxss";
+.user-center {
+  .user-info {
+    height: 45vh;
+    background: var(--themeColor);
+    overflow: hidden;
+    .btn {
+      margin-top: 200rpx;
+      width: 200rpx;
+    }
+    .content {
+      position: relative;
+      width: 100vw;
+      .bg-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 750rpx;
+        height: 45vh;
+        filter: blur(8px);
+      }
+      .info {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 750rpx;
+        height: 45vh;
+        .avatar{
+          display: block;
+          margin: 100rpx auto;
+          width: 150rpx;
+          height: 150rpx;
+          border-radius: 50%;
+        }
+        .title {
+          text-align: center;
+          color: #ffffff;
+          margin-top: -50rpx;
+        }
+      }
+    }
+  }
+  .mine {
+    width: 90%;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    background: #fff;
+    height: 110rpx;
+    padding-top: 10rpx;
+    text-align: center;
+    justify-content: space-around;
+    color: #999999;
+    border-radius: 12rpx;
+    .num {
+      color: var(--themeColor);
+    }
+  }
+  .main {
+    background: #f1f1f1;
+    padding: 0 36rpx;
+    overflow: hidden;
+    .my-order {
+      margin-top: 70rpx;
+      background: #fff;
+      .title {
+        padding: 20rpx;
+        color: #999999;
+        border-bottom: 1px solid #f1f1f1;
+      }
+      .order-tab {
+        padding: 30rpx 0;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        color: #999999;
+        .iconfont {
+          font-size: 40rpx;
+          color: var(--themeColor);
+        }
+        .text {
+          margin-top: 10rpx;
+          font-size: 24rpx;
+        }
+      }
+    }
+    .items {
+      padding: 20rpx;
+      margin: 8rpx 0;
+      background: #fff;
+      color: #999999;
+      &.share {
+        border-bottom-left-radius: 12rpx;
+        border-bottom-right-radius: 12rpx;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<view class="home">
+  <view class="search-input">
+    <navigator url="/pages/search/index">
+      <SearchInput />
+    </navigator>
+  </view>
+  <view class="home-swiper">
+    <swiper class="swiper" indicator-dots autoplay circular >
+      <swiper-item class="swiper-item" wx:for="{{swiperList}}" wx:key="goods_id">
+        <navigator url="{{item.navigator_url}}" open-type="navigate">
+          <image class="swiper-image" src="{{item.image_src}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false"/>
+        </navigator>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="cates-nav">
+    <view class="cates-item" wx:for="{{catesList}}" wx:key="name">
+      <navigator url="{{item.navigator_url}}" open-type="navigate">
+        <image class="cates-image" src="{{item.image_src}}" mode="widthFix" lazy-load="false" binderror="" bindload="" />
+      </navigator>
+    </view>
+  </view>
+  <view class="floor">
+    <view class="floor-item" wx:for="{{floorList}}" wx:key="floor_title" wx:for-item="floorItem">
+      <image src="{{floorItem.floor_title.image_src}}"  mode="widthFix" />
+      <view class="images-wrapper">
+        <view class="floor-images" wx:for="{{floorItem.product_list}}" wx:key="name">
+          <navigator url="" open-type="navigate">
+            <image src="{{item.image_src}}" mode="{{index !== -1 ? 'widthFix': ''}}" />
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+  

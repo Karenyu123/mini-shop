@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "CartFooter": "../../components/cartFooter/cartFooter"
+  },
+  "navigationBarTitleText": "购物车"
+}

@@ -1,0 +1,48 @@
+@import "../../style/font.wxss";
+.detail-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100rpx;
+  z-index: 1;
+  display: flex;
+  text-align: center;
+  .left {
+    flex: 50%;
+    background: #ffffff;
+    display: flex;
+    color: #666666;
+    padding-top: 12rpx;
+    .tool-item {
+      position: relative;
+      flex: 1;
+      .btn {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0;
+      }
+      .iconfont {
+        font-size: 40rpx;
+      }
+      .text {
+        font-size: 24rpx;
+      }
+    }
+  }
+  .add-cart {
+    flex: 25%;
+    background: #FFA500;
+    line-height: 100rpx;
+    color: white;
+  }
+  .buy {
+    flex: 25%;
+    background: var(--themeColor);
+    line-height: 100rpx;
+    color: white;
+  }
+}

@@ -1,0 +1,121 @@
+/* pages/cart/index.wxss */
+.cart .btn {
+  padding: 20rpx 30rpx;
+  width: 240rpx;
+  border: 1px solid yellowgreen;
+  color: yellowgreen;
+  margin: 20rpx auto;
+  border-radius: 20rpx;
+}
+.cart .address {
+  margin: 0 36rpx;
+  padding-bottom: 20rpx;
+  border-bottom: 1px solid #f1f1f1;
+}
+.cart .address .title {
+  padding: 20rpx 0;
+  font-weight: 700;
+}
+.cart .address .user-info,
+.cart .address .address-detail {
+  color: #999999;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16rpx;
+}
+.cart .cart-list {
+  padding: 0 36rpx;
+}
+.cart .cart-list .title {
+  padding: 20rpx 0;
+  font-weight: 700;
+}
+.cart .cart-list .cart-list-item {
+  display: flex;
+  align-items: center;
+}
+.cart .cart-list .cart-list-item .checkbox {
+  flex: 1;
+}
+.cart .cart-list .cart-list-item .goods-img {
+  flex: 2 ;
+  text-align: center;
+}
+.cart .cart-list .cart-list-item .goods-img image {
+  width: 100%;
+}
+.cart .cart-list .cart-list-item .goods-info {
+  flex: 4;
+  flex-direction: column;
+  justify-content: space-around;
+  color: #999999;
+  padding-left: 20rpx;
+}
+.cart .cart-list .cart-list-item .goods-info .goods-name {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart .cart-list .cart-list-item .goods-info .price-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30rpx;
+}
+.cart .cart-list .cart-list-item .goods-info .price-wrapper .price {
+  color: var(--themeColor);
+}
+.cart .cart-list .cart-list-item .goods-info .price-wrapper .add,
+.cart .cart-list .cart-list-item .goods-info .price-wrapper .minus {
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  border: 1px solid yellowgreen;
+  border-radius: 8rpx;
+}
+.cart .cart-footer {
+  width: 100vw;
+  height: 98rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f1f1;
+}
+.cart .cart-footer .choose-all {
+  flex: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+}
+.cart .cart-footer .choose-all .total-price {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.cart .cart-footer .choose-all .total-price text {
+  line-height: 90rpx;
+}
+.cart .cart-footer .choose-all .total-price .price-info {
+  padding-left: 30rpx;
+}
+.cart .cart-footer .choose-all .total-price .price-info .price {
+  color: var(--themeColor);
+}
+.cart .cart-footer .choose-all .total-price .price-info .desc {
+  color: #999999;
+  font-size: 24rpx;
+}
+.cart .cart-footer .purchase {
+  background: var(--themeColor);
+  height: 100%;
+  line-height: 98rpx;
+  color: white;
+  flex: 1;
+  text-align: center;
+}

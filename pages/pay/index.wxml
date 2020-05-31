@@ -1,0 +1,44 @@
+<view class="cart">
+  <view class="address">
+    <view class="title">收货地址</view>
+    <view class="user-info">
+      <view class="name">{{address.userName}}</view>
+      <view class="number">{{address.telNumber}}</view>
+    </view>
+    <view class="address-detail">
+      <view class="address-info">{{address.all}}</view>
+      <view class="code">邮编：{{address.postalCode}}</view>
+    </view>
+  </view>
+    <view class="cart-list">
+      <!-- <view class="title">购物车</view> -->
+      <view class="cart-list-item" wx:for="{{cart}}" wx:key="index">
+        <navigator class="goods-img">
+          <image mode="widthFix" src="{{item.pics[0]['pics_mid']}}" />
+        </navigator>
+        <view class="goods-info">
+          <view class="goods-name">{{item.goods_name}}</view>
+          <view class="price-wrapper">
+            <view class="price">￥{{item.goods_price}}</view>
+            <view class="action">
+              <!-- <text class="minus" bindtap="handleDecrement" data-goods="{{item}}">-</text> -->
+              <text class="count">{{item.num}}</text>
+              <!-- <text class="add" bindtap="handleCartAdd" data-goods="{{item}}">+</text> -->
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  <view class="cart-footer">
+    <view class="choose-all">
+      <view class="total-price">
+        <text>合计:</text>
+        <view class="price-info">
+          <view class="price">￥{{totalPrice}}</view>
+          <view class="desc">包含运费</view>
+        </view>
+      </view>
+    </view>
+    <view class="purchase" bindtap="toPurchase">支付({{totalCount}})</view>
+  </view>
+</view>

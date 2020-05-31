@@ -1,0 +1,44 @@
+.cart-footer {
+  width: 100vw;
+  height: 98rpx;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #f1f1f1;
+}
+.cart-footer .choose-all {
+  flex: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx;
+}
+.cart-footer .choose-all .total-price {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.cart-footer .choose-all .total-price text {
+  line-height: 90rpx;
+}
+.cart-footer .choose-all .total-price .price-info {
+  padding-left: 30rpx;
+}
+.cart-footer .choose-all .total-price .price-info .price {
+  color: var(--themeColor);
+}
+.cart-footer .choose-all .total-price .price-info .desc {
+  color: #999999;
+  font-size: 24rpx;
+}
+.cart-footer .purchase {
+  background: var(--themeColor);
+  height: 100%;
+  line-height: 98rpx;
+  color: white;
+  flex: 1;
+  text-align: center;
+}

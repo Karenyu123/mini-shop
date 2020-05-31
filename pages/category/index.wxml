@@ -1,0 +1,22 @@
+<!--pages/category/index.wxml-->
+<view class="category">
+  <SearchInput />
+  <view class="container">
+    <scroll-view class="left-menu" scroll-y>
+       <view class="menu-item {{catsIndex === currentIndex ?'active' : ''}}" wx:for="{{cats}}" wx:key="cat_id" wx:for-item="catsName" wx:for-index="catsIndex" bindtap="handleMenuTap" data-index="{{catsIndex}}">
+         {{catsName.cat_name}}
+       </view>
+    </scroll-view>
+    <scroll-view class="right-content" scroll-y scroll-top="{{scrollTop}}">
+      <view class="goods-item" wx:for="{{goodslist}}" wx:key="cat_id" wx:for-item="goodsItem" wx:for-index="gooodsIndex">
+        <view class="goods-title">/ {{goodsItem.cat_name}} /</view>
+        <view class="goods-list">
+          <navigator class="goods-item" url="/pages/goods_list/index?cid={{item.cat_id}}" open-type="navigate" wx:for="{{goodsItem.children}}" wx:key="cat_id">
+            <image src="{{item.cat_icon}}" mode="widthFix" />
+            <view class="goods-name">{{item.cat_name}}</view>
+          </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

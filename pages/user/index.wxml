@@ -1,0 +1,59 @@
+<!--pages/user/index.wxml-->
+<view class="user-center">
+  <view class="user-info">
+    <button wx:if="{{!userInfo.avatarUrl}}" class="btn" type="primary" plain bindtap="toLogin">登录</button>
+    <view class="content" wx:else>
+      <image class="bg-image" src="{{userInfo.avatarUrl}}" mode="widthFix" />
+      <view class="info">
+        <image src="{{userInfo.avatarUrl}}" class="avatar" mode="widthFix"/>
+        <view class="title">{{userInfo.nickName}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="mine">
+    <navigator>
+      <view class="num">0</view>
+      <view class="text">收藏的店铺</view>
+    </navigator>
+    <navigator url="/pages/collect/index">
+      <view class="num">{{totalCollects}}</view>
+      <view class="text">收藏的商品</view>
+    </navigator>
+    <navigator>
+      <view class="num">0</view>
+      <view class="text">关注的商品</view>
+    </navigator>
+    <navigator>
+      <view class="num">0</view>
+      <view class="text">我的足迹</view>
+    </navigator>
+  </view>
+  <view class="main">
+    <view class="my-order">
+      <view class="title">我的订单</view>
+      <view class="order-tab">
+        <navigator url="/pages/order/index?type=1">
+          <text class="iconfont icon-dingdan1"></text>
+          <view class="text">全部订单</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=2">
+          <text class="iconfont icon-daifukuan"></text>
+          <view class="text">待付款</view>
+        </navigator>
+        <navigator url="/pages/order/index?type=3">
+          <text class="iconfont icon-daishouhuo-"></text>
+          <view class="text">待收货</view>
+        </navigator>
+        <navigator>
+          <text class="iconfont  icon-tuikuan1"></text>
+          <view class="text">退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+    <view class="items address">收货地址管理</view>
+    <view class="items">联系客服</view>
+    <view class="items">意见反馈</view>
+    <view class="items">关于我们</view>
+    <view class="items share">分享应用</view>
+  </view>
+</view>

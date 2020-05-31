@@ -1,0 +1,129 @@
+/* pages/cart/index.wxss */
+.cart {
+  .btn {
+    padding: 20rpx 30rpx;
+    width: 240rpx;
+    border: 1px solid yellowgreen;
+    color: yellowgreen;
+    margin: 20rpx auto;
+    border-radius: 20rpx;
+  }
+  .address {
+    margin: 0 36rpx;
+    padding-bottom: 20rpx;
+    border-bottom: 1px solid #f1f1f1;
+    .title {
+      padding: 20rpx 0;
+      font-weight: 700;
+    }
+    .user-info,
+    .address-detail {
+      color: #999999;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 16rpx;
+    }
+  }
+  .cart-list {
+    padding: 0 36rpx;
+    .title {
+      padding: 20rpx 0;
+      font-weight: 700;
+    }
+    .cart-list-item {
+      display: flex;
+      align-items: center;
+      .checkbox {
+        flex: 1;
+      }
+      .goods-img {
+        flex:2 ;
+        text-align: center;
+        image {
+          width: 100%;
+        }
+      }
+      .goods-info{
+        flex: 4;
+        flex-direction: column;
+        justify-content: space-around;
+        color: #999999;
+        padding-left: 20rpx;
+        .goods-name {
+          display: -webkit-box;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 2;
+        }
+        .price-wrapper {
+          display: flex;
+          justify-content: space-between;
+          padding-top: 30rpx;
+          .price {
+            color: var(--themeColor)
+          }
+          .add,.minus {
+            display: inline-block;
+            width: 40rpx;
+            height: 40rpx;
+            text-align: center;
+            line-height: 40rpx;
+            border: 1px solid yellowgreen;
+            border-radius: 8rpx;
+          }
+        }
+      }
+    }
+  }
+  .cart-footer {
+    width: 100vw;
+    height: 98rpx;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #f1f1f1;
+
+    .choose-all {
+      flex: 60%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 30rpx;
+
+      .total-price {
+        display: flex;
+        height: 100%;
+        align-items: center;
+
+        text {
+          line-height: 90rpx;
+        }
+
+        .price-info {
+          padding-left: 30rpx;
+
+          .price {
+            color: var(--themeColor)
+          }
+
+          .desc {
+            color: #999999;
+            font-size: 24rpx;
+          }
+        }
+      }
+    }
+
+    .purchase {
+      background: var(--themeColor);
+      height: 100%;
+      line-height: 98rpx;
+      color: white;
+      flex: 1;
+      text-align: center;
+    }
+  }
+}
