@@ -22,7 +22,9 @@
 
 动图展示：
 
-https://pics.images.ac.cn/image/5ed37d195cdc1.html
+<img src="https://i.loli.net/2020/05/31/hU6nfRiS9eyAbQN.gif" width = "300"  div align=center/>
 
-https://pics.images.ac.cn/image/5ed37cad803e2.html
+
+
+
 
