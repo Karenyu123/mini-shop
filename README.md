@@ -19,12 +19,12 @@
 7、个人中心，登录功能
 
 
-
 动图展示：
 
 <img src="https://i.loli.net/2020/05/31/hU6nfRiS9eyAbQN.gif" width = "300"  div align=center/>
 
+<img src="https://i.loli.net/2020/05/31/EoyiZXtOeVU7gm3.gif" width = "300"  div align=center/>
 
+<img src="https://i.loli.net/2020/05/31/lUCtQ4VRKc5SfMx.gif" width = "300"  div align=center/>
 
-
-
+<img src="https://i.loli.net/2020/05/31/BGmUpCqFfzPyglR.gif" width = "300"  div align=center/>
